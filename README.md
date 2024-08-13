@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Please create a page that contains an input field.
+When the user enters _at least_ three characters into this input field,
+you should display all flight information from the `flights.json` file where the destination airport matches the entered input.
+Limit the search result to a maximum of 5 flights.
 
-Currently, two official plugins are available:
+Please implement it using React. Try to keep it simple.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+We think 4 hours should be enough to spend on this assignment.
+Please don't spend more than that unless you're having fun and want to show off :)
 
-## Expanding the ESLint configuration
+## Requirements:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Use React. Create your app with React but try to limit the use of third party UI libraries.
+- Use Typescript. Make sure your app is typed correctly.
+- Make it look nice. Make use of the provided colors. How you want to implement them is entirely your choice ;)
+- Your application should treat the contents of `flights.json` as the output of an API endpoint.
+  It should load this asynchronously using XHR or Fetch API and should not require a page reload when the user changes their input.
+- Make sure the results are sortable. The filtered flight data should be sortable on date and (expected) time. Initial expected sorting is early to late.
 
-- Configure the top-level `parserOptions` property like this:
+## Submission:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Create a clone of this repository locally.
+  Then push it to **your GitHub account** and continue working from there.
+  Once you have finished, please send us the URL of the repository you have created.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Some things to consider:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- We like DRY and KISS
+- We like tested code
+- We like readable code
+- We like using the latest features of ES6 where applicable
+- Last but not least, have fun!
