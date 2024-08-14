@@ -25,26 +25,24 @@ export function Search() {
         <main className="bg-white opacity-80">
           <menu className="text-sm flex justify-center gap-2">
             <li>
-              <a
+              <button
                 className={`cursor-pointer ${
                   sortOrder === "newest" ? "underline" : "font-bold"
                 }`}
-                href="#"
                 onClick={() => setSortOrder("oldest")}
               >
                 Early
-              </a>
+              </button>
             </li>
             <li>
-              <a
+              <button
                 className={`cursor-pointer ${
                   sortOrder === "oldest" ? "underline" : "font-bold"
                 }`}
-                href="#"
                 onClick={() => setSortOrder("newest")}
               >
                 Late
-              </a>
+              </button>
             </li>
           </menu>
           <section className="text-xl text-left  p-2 sm:p-5 w-full">

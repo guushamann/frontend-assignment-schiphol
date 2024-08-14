@@ -41,6 +41,7 @@
     --gradient-privium: linear-gradient(90deg, #027e9b 40%, #1b60db 90%);
   }
 }
+
 :root {
   color: var(--schiphol-blue);
   background-color: var(--afternoon-blue);
@@ -53,6 +54,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
 #root {
   width: 100%;
   margin: 0 auto;
@@ -60,12 +62,15 @@ body {
   display: flex;
   justify-content: center;
 }
+
 a {
   color: var(--schiphol-blue);
 }
+
 a:hover {
   color: var(--afternoon-blue);
 }
+
 .searchbox {
   border-color: var(--schiphol-blue);
   background-color: var(--white);
@@ -76,9 +81,11 @@ a:hover {
 .input-search:focus {
   border-color: var(--schiphol-blue);
 }
+
 .flight-nr {
   color: var(--afternoon-blue);
 }
+
 .search-row:hover > div {
   background-color: var(--light-blue);
 }
