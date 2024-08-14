@@ -1,34 +1,24 @@
-# Assignment
+# Schiphol test
 
-Please create a page that contains an input field.
-When the user enters _at least_ three characters into this input field,
-you should display all flight information from the `flights.json` file where the destination airport matches the entered input.
-Limit the search result to a maximum of 5 flights.
+## How to run the project
 
-Please implement it using React. Try to keep it simple.
+Before you run this project, you need to run npm install in the root of the project.
 
-We think 4 hours should be enough to spend on this assignment.
-Please don't spend more than that unless you're having fun and want to show off :)
+Open a terminal and Turn on the server with `npm run server`.
 
-## Requirements:
+Open another terminal and run `npm run dev` to start the project.
 
-- Use React. Create your app with React but try to limit the use of third party UI libraries.
-- Use Typescript. Make sure your app is typed correctly.
-- Make it look nice. Make use of the provided colors. How you want to implement them is entirely your choice ;)
-- Your application should treat the contents of `flights.json` as the output of an API endpoint.
-  It should load this asynchronously using XHR or Fetch API and should not require a page reload when the user changes their input.
-- Make sure the results are sortable. The filtered flight data should be sortable on date and (expected) time. Initial expected sorting is early to late.
+Open a browser and surf to http://localhost:5173/
 
-## Submission:
+If you want to run the tests, execute `npm run test`
 
-- Create a clone of this repository locally.
-  Then push it to **your GitHub account** and continue working from there.
-  Once you have finished, please send us the URL of the repository you have created.
+## What did I build?
 
-### Some things to consider:
+I have build a react application that can show flights by searching by location. You can sort the flight by date.
 
-- We like DRY and KISS
-- We like tested code
-- We like readable code
-- We like using the latest features of ES6 where applicable
-- Last but not least, have fun!
+I used:
+
+- Express.js to setup the smallest possible server for hosting the json file.
+- Vitest to setup some unit tests for the main functionality of this app.
+- Tailwind as a css utility library to speed up the css work.
+- React Query to make the fetching of the data robust and it also helps to make the code more readable.

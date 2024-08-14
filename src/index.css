@@ -53,3 +53,29 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+a {
+  color: var(--schiphol-blue);
+}
+a:hover {
+  color: var(--afternoon-blue);
+}
+.searchbox {
+  border-color: var(--schiphol-blue);
+  background-color: var(--white);
+}
+.input-search:focus {
+  border-color: var(--schiphol-blue);
+}
+.flight-nr {
+  color: var(--afternoon-blue);
+}
+.search-row:hover > div {
+  background-color: var(--light-blue);
+}
