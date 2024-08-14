@@ -34,7 +34,7 @@ export default function SearchResults({
       <li className="contents search-row font-bold text-sm md:text-base">
         <div className="py-2">FlightNr</div>
         <div className="py-2">Airport</div>
-        <div className="py-2 text-right">Departure</div>
+        <div className="py-2">Departure</div>
       </li>
       {filteredData.map((fd, index) => (
         <li
@@ -43,7 +43,7 @@ export default function SearchResults({
         >
           <div className="flight-nr py-2">{fd.flightNumber}</div>
           <div className="city py-2">{fd.airport}</div>
-          <div className="py-2 text-right">
+          <div className="py-2">
             <time dateTime={new Date(fd.dateTime).toISOString()}>
               {new Intl.DateTimeFormat("nl-NL", {
                 dateStyle: "short",
