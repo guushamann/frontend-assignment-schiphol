@@ -1,10 +1,10 @@
-import { useGetFlight } from "../api";
+import { useGetFlight } from "../api/flights";
 import {
   filterOnSearchedLocation,
   orderFlightDataByDateTime,
   OrderTypes,
   processRawFlightData,
-} from "../processFlightData";
+} from "../util/processFlightData";
 
 export default function SearchResults({
   inputSearch,

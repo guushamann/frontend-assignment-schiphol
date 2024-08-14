@@ -69,7 +69,10 @@ a:hover {
 .searchbox {
   border-color: var(--schiphol-blue);
   background-color: var(--white);
+  background-image: url("hero.png");
+  background-size: cover;
 }
+
 .input-search:focus {
   border-color: var(--schiphol-blue);
 }

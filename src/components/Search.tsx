@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SearchResults from "./SearchResults";
-import { OrderTypes } from "../processFlightData";
+import { OrderTypes } from "../util/processFlightData";
 function onChangeInput(input: string) {
   return input.length > 2 ? input : "";
 }
@@ -8,7 +8,7 @@ export function Search() {
   const [inputSearch, setInputSearch] = useState("");
   const [sortOrder, setSortOrder] = useState<OrderTypes>("oldest");
   return (
-    <div className="searchbox border flex flex-col m-2 sm:m-5 w-full md:w-4/5 lg:w-2/5 justify-center">
+    <div className="searchbox border flex flex-col m-2 sm:m-5 w-full md:w-4/5 lg:w-2/5  min-h-96">
       <header className="p-2 sm:p-5">
         <h1 className="text-2xl md:text-4xl p-4 font-bold uppercase ">
           Search for a flight
@@ -22,7 +22,7 @@ export function Search() {
         />
       </header>
       {inputSearch && (
-        <main>
+        <main className="bg-white opacity-80">
           <menu className="text-sm flex justify-center gap-2">
             <li>
               <a

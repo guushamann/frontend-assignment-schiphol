@@ -22,3 +22,9 @@ I used:
 - Vitest to setup some unit tests for the main functionality of this app.
 - Tailwind as a css utility library to speed up the css work.
 - React Query to make the fetching of the data robust and it also helps to make the code more readable.
+
+## Decisions
+
+I doubted to create the project in Remix for a minute, to not be overwelmed by a new framework and focus on creating a clean and tested app, I decided to create a SPA.
+I have focussed on functional unittests, with more time i would have added more component tests, the only "component" test in the project is a test for the useQuery hook.
+I created a simple webserver for the "mock" of the data, in a reallife scenario i would create a real mockserver that can be used for development and for a playright e2e test suite.
